@@ -77,7 +77,7 @@ def fetch_all_entries(username):
 
 def insert_entry(username,date,name,place,mailid,other,lof):
     if(lof=="lost"):
-        return ldb.put({"date": date,"name": name,"place": place,"email":mailid,"username":username,"other": other,"info":"","fileid":filename})
+        return ldb.put({"date": date,"name": name,"place": place,"email":mailid,"username":username,"other": other,"info":""})
     else:
         return rdb.put({"date": date,"name": name,"place": place,"email":mailid,"username":username,"other": other,"info":""})
 
