@@ -131,6 +131,10 @@ def log_sign():
                     else:
                         st.error("Please check your username / password ")
 def main():
+    btn=st.button("Logout")
+    if(btn):
+        st.session_state["key"] = "log_sign"
+        st.experimental_rerun()
     selected=option_menu(
             menu_title=None,
             options=["Lost","Found"],
