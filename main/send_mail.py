@@ -1,6 +1,7 @@
 import smtplib
 import ssl
 import random as ran
+import os
 def forgot_password(email_to):
     smtp_port=587
     smtp_server="smtp.gmail.com"
