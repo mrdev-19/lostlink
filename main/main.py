@@ -202,7 +202,8 @@ def admin():
                     st.write("Item : "+user["name"])
                     st.write("Place Where it is Lost : "+user["place"])
                     st.write("Other Details : "+user["other"])
-                    
+                    st.markdown('<a href="mailto:'+"all@srmap.students"+'">Bulk Mail</a>', unsafe_allow_html=True)
+                    st.markdown('<a href="mailto:'+user["email"]+'">Contact</a>', unsafe_allow_html=True)
                     rollnumb=st.text_input("Enter the roll of the student to whom it was returned")
                     check=st.checkbox("The item is returned to the owner")        
                     sub=st.form_submit_button("Returned Successfully")
@@ -257,8 +258,8 @@ def admin():
                     st.write("Place Where it is found : "+user["place"])
                     st.write("Other Details : "+user["other"])
                     st.write("The Item belongs to "+user["username"])
+                    st.markdown('<a href="mailto:'+"all@srmap.students"+'">Bulk Mail</a>', unsafe_allow_html=True)
                     st.markdown('<a href="mailto:'+user["email"]+'">Contact</a>', unsafe_allow_html=True)
-                    # st.write("You can contact him\her at "+user["number"])
                     rollnum=st.text_input("Enter the roll number of the student whom it was returned by ",placeholder="")
                     sub=st.form_submit_button("Return The Item to the Owner")
                     if(sub and rollnum):
