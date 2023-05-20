@@ -153,7 +153,7 @@ def main():
                 if(val.validate_email(mailid)==False):
                     st.error("Enter email in a valid format like 'yourname@org.com'")
                 else:
-                    db.insert_entry(st.session_state["curlogin"],str(date),name,place,mailid,other,lof,picture)
+                    db.insert_entry(st.session_state["curlogin"],str(date),name,place,mailid,other,lof)
                     st.success("Form Submitted Successfully")
 
     elif(selected=="Found"):
