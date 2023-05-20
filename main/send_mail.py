@@ -14,7 +14,7 @@ def forgot_password(email_to):
         for i in range(6):
             otp+=str(ran.randint(1,9))
         return "Your 6 Digit OTP for Lost and Found Portal is "+otp
-    message=otpgen()+"\nYou can enter your OTP and new password at : https://resetpassword.streamlit.app"
+    message=otpgen()+"\nYou can enter your OTP and new password at : https://password-reset.streamlit.app"
     #fill the details here after creating new app
     email_context = ssl.create_default_context()
 
