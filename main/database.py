@@ -1,8 +1,6 @@
 import os
 from deta import Deta
 from dotenv import load_dotenv
-from fastapi import FastAPI, File, UploadFile
-from fastapi.responses import HTMLResponse, StreamingResponse
 
 #load env var
 
