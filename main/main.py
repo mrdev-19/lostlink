@@ -145,7 +145,6 @@ def main():
             place=st.text_input("Where was it lost ?",placeholder="Atrium / XLab etc.")
             mailid=st.text_input("Email !",placeholder="yourname@org.com")
             other=st.text_input("Any other relevant details? ",placeholder="Colour / Size / Specifications etc.")
-            picture = st.camera_input("Take a picture")
             submitted=st.form_submit_button("Submit data")
             lof="lost"
             if(submitted):
